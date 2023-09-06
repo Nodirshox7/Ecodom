@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <div class="nav_left">
+            <a href="" class="nav_left-btn">
+              <img src="./img/nav-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="nav_right">
+            <div class="success_article_btn-group nav_article">
+              <button class="phone active">+998 (97) 000 00 00</button>
+              <button class="order show-modal active">Заказать звонок</button>
+            </div>
+
+            <!-- modal  -->
+
+            <form class="modal" id="dataForm">
+              <div class="inps_one">
+                <label for="">Ваше имя*</label>
+                <input
+                  type=""
+                  id="message_name"
+                  class="one_inp"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+
+              <div class="inps_one">
+                <label for="">Ваш номер телефона*</label>
+                <input
+                  type=""
+                  id="message_number"
+                  class="one_inp"
+                  placeholder="+99890 000 00 00"
+                  required
+                />
+              </div>
+
+              <div class="inps_one">
+                <label for="">Ваш адрес</label>
+                <input
+                  type="text"
+                  id="message_address"
+                  class="one_inp"
+                  placeholder="Вводите свой адрес"
+                  required
+                />
+              </div>
+              <div class="btns">
+                <button type="submit" id="send" class="close">Отправить</button>
+              </div>
+            </form>
+
+            <div class="overlay"></div>
+
+            <!--  -->
+            <div class="foricons">
+              <a href="" class="tgicon">
+                <img src="./img/telegram.png" alt="" />
+              </a>
+              <a href="" class="tgicon">
+                <img src="./img/insta'.png" alt="" />
+              </a>
+              <a href="" class="tgicon">
+                <img src="./img/facebook.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="header__one">
+        <div class="container">
+          <div class="header__content">
+            <div class="header_left">
+              <h2 class="header_left-title">
+                Средство от <br />
+                тараканов (порошок)
+              </h2>
+              <p class="header_left-text">
+                Самые лучшие средства от <br />
+                тараканов в квартире и доме.
+              </p>
+              <button class="header_left-btn">
+                Заказать сейчас
+                <img
+                  src="./img/arrow.png"
+                  class="header_left-btn-icon"
+                  alt="left icon button"
+                />
+              </button>
+
+              <!-- modal -->
+              <form class="modal" id="dataForm">
+                <div class="inps_one">
+                  <label for="">Ваше имя*</label>
+                  <input
+                    type=""
+                    id="message_name"
+                    class="one_inp"
+                    placeholder="Имя"
+                  />
+                </div>
+
+                <div class="inps_one">
+                  <label for="">Ваш номер телефона*</label>
+                  <input
+                    type=""
+                    id="message_number"
+                    class="one_inp"
+                    placeholder="+99890 000 00 00"
+                  />
+                </div>
+
+                <div class="inps_one">
+                  <label for="">Ваш адрес</label>
+                  <input
+                    type="text"
+                    id="message_address"
+                    class="one_inp"
+                    placeholder="Вводите свой адрес"
+                  />
+                </div>
+                <div class="btns">
+                  <button type="submit" id="send" class="send">
+                    Отправить
+                  </button>
+                  <button class="close">Закрывать</button>
+                </div>
+              </form>
+
+              <div class="overlay"></div>
+            </div>
+            <div class="header_right">
+              <div class="player">
+                <video
+                  src="06_day_part_II_725_lednik_S_handheld_preview.mp4"
+                  class="video"
+                  poster="./img/Rectangle 5.png"
+                ></video>
+                <button class="play-circle">
+                  <div class="header_right_image_btn_play">
+                    <img
+                      src="./img/play.png"
+                      class="header_right_image_btn_icon"
+                      alt="play icon"
+                    />
+                  </div>
+                </button>
+                <div class="panel">
+                  <div class="panel-line">
+                    <div class="panel-line-current"></div>
+                  </div>
+
+                  <div class="panel-left">
+                    <button class="play"><i class="fas fa-play"></i></button>
+
+                    <div class="volume">
+                      <button class="mute">
+                        <i class="fas fa-volume-up"></i>
+                      </button>
+                      <input type="range" class="volume-slider" value="100" />
+                    </div>
+
+                    <div class="video-time">
+                      <p class="time-current">0:00</p>
+                      /
+                      <p class="time-duration">2:00</p>
+                    </div>
+                  </div>
+
+                  <div class="panel-right">
+                    <select name="" id="" class="video-speed">
+                      <option value="0.25">0.25</option>
+                      <option value="0.50">0.50</option>
+                      <option value="0.75">0.75</option>
+                      <option value="1" selected>Normal</option>
+                      <option value="1.25">1.25</option>
+                      <option value="1.5">1.5</option>
+                      <option value="1.75">1.75</option>
+                      <option value="2">2</option>
+                    </select>
+                    <button class="fullscreen">
+                      <i class="fas fa-expand"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                src="./img/Group 7.png"
+                class="header_right_image_one"
+                alt="logo 1"
+              />
+
+              <img
+                src="./img/Group 7.png"
+                class="header_right_image_three"
+                alt="logo 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main-section-one">
+        <div class="container">
+          <div class="main-section-one-list">
+            <li class="main-section-one-item">
+              <img
+                src="./img/header-icon1.png"
+                class="main-section-one-item-image"
+                alt=""
+              />
+              <h5 class="main-section-one-item-title">Высокая эффективность</h5>
+              <p class="main-section-one-item-text">
+                Порошок прилипает к лапкам насекомых, <br />
+                которые в итоге разносят яд по всему телу и приносят яд в свое
+                же гнездо, то есть, к другим вредителям
+              </p>
+            </li>
+            <li class="main-section-one-item">
+              <img
+                src="./img/clock 1.png"
+                class="main-section-one-item-image"
+                alt=""
+              />
+              <h5 class="main-section-one-item-title">Длительное действие</h5>
+              <p class="main-section-one-item-text">
+                Насекомые умирают в течении суток, но после <br />
+                на свет появляются их потомки. Зона остается действенной на
+               
+              </p>
+            </li>
+            <li class="main-section-one-item">
+              <img
+                src="./img/guarantee 1.png"
+                class="main-section-one-item-image"
+                alt=""
+              />
+              <h5 class="main-section-one-item-title">
+                Безопасность для теплокровных
+              </h5>
+              <p class="main-section-one-item-text">
+                Препарат не действует на ни на человека, ни на животное -
+                поэтому совершенно безопасно
+              </p>
+            </li>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section-two">
+        <div class="container">
+          <div class="cockroach_content">
+            <div class="cockroach_content-left">
+              <img
+                src="./img/Group 19.png"
+                alt="logo-one"
+                class="cockroach_content-left-img-one"
+              />
+              <img
+                src="./img/cockroach_logo.png"
+                alt="logo-two"
+                class="cockroach_content-left-img-two"
+              />
+              <img
+                src="./img/Group 19.png"
+                alt="logo-three"
+                class="cockroach_content-left-img-three"
+              />
+            </div>
+            <div class="cockroach_content-right">
+              <h4 class="cockroach_content-right-title">
+                Закажите препарат от тараканой сейччас и <br />
+                скажи тараканом нет!
+              </h4>
+              <p class="cockroach_content-right-text">
+                Закажите препарат сейчас и получите скидку на чистку.
+              </p>
+              <button class="cockroach_content-right-btn">
+                <span class="cockroach_content-right-btn-span"
+                  >Заказать сейчас</span
+                >
+                <img
+                  src="./img/checked_logo.png"
+                  class="cockroach_content-right-btn-img"
+                  alt="logo-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section-three">
+        <div class="container">
+          <div class="success_article">
+            <div class="success_article_title-blog">
+              <h4 class="success_article_title">Как это работает</h4>
+              <div class="success_article_btn-group main__article">
+                <button class="success_article_btn-one">
+                  Средство от клопов (порошок)
+                </button>
+                <button class="success_article_btn-two active">
+                  Средство от тараканов (порошок)
+                </button>
+              </div>
+            </div>
+            <div class="success_content">
+              <div class="success_content-one active">
+                <p class="success_content-one-text-block">
+                  Наносится В СУХОМ ВИДЕ вдоль плинтусов (шкафов,труб,шахт,окон)
+                  минимальным количеством.
+                  <br />Не нужно покидать помещение и проводить обязательную
+                  уборку квартиры.
+                </p>
+                <div class="success_content-one-article-group">
+                  <div class="success_content-one-left">
+                    <h6 class="success_content-one-left-title">Применение:</h6>
+                    <p class="success_content-one-left-text">
+                      <span class="success_content-one-left-text-span-one"
+                        >Надев респиратор В СУХОМ ВИДЕ, НЕ РАЗБАВЛЯЯ ВОДОЙ
+                        кисточкой для рисования обрабатывают места скопления и
+                        передвижения насекомых.</span
+                      >
+                      <br />
+                      <span class="success_content-one-left-text-span-two"
+                        >Порошок наносят пунктирной линией вдоль плинтусов.
+                        Подлежат обработки двери, оконные проемы, вентиляционные
+                        ходы, газовые плиты, раковины.<br />
+                        В шкафах, столах, ящиках можно насыпать немного порошка
+                        на кусочки картона и разложить по углам.</span
+                      >
+                    </p>
+                    <ul class="success_content-one-left-list">
+                      <li class="success_content-one-left-item">
+                        В СУХОМ ВИДЕ! НЕ РАЗБАВЛЯТЬ ВОДОЙ!
+                      </li>
+                      <li class="success_content-one-left-item">
+                        ОБЯЗАТЕЛЬНОЕ УСЛОВИЕ - ОБРАБАТЫВАТЬ ВСЮ КВАРТИРУ! КАЖДУЮ
+                        КОМНАТУ (да, даже если в спальных комнатах нет
+                        тараканов) они появятся там с обработанной ранее
+                        кухни!!!!
+                      </li>
+                      <li class="success_content-one-left-item">
+                        ПРОТИРАТЬ И МЫТЬ ПОЛЫ ПОСЛЕ ОБРАБОТКИ СТРОГО ЗАПРЕЩАЕТСЯ
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="success_content-one-right">
+                    <h6 class="success_content-one-left-title">
+                      Препарат убирают не ранее 3-х недель!
+                    </h6>
+                    <p class="success_content-one-left-text">
+                      <span class="success_content-one-left-text-span-one"
+                        >При необходимости процедуру протравления можно
+                        повторить, с целью ликвидации второго поколения
+                        насекомых. </span
+                      ><br />
+                      <span class="success_content-one-left-text-span-two">
+                        Для получения максимального эффекта порошок насыпают
+                        возле мусорного ведра, вокруг раковины, вдоль плинтусов,
+                        за кухонной плитой (это излюбленное место пребывания
+                        тараканов) и за холодильником.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-two">
+                        Чем дольше средство будет здесь находиться, тем большее
+                        количество тараканов в нем перепачкается.
+                      </span>
+                    </p>
+                    <img
+                      src="./img/Rectangle 5.png"
+                      class="success_content-one-right-image"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="success_content-two">
+                <p class="success_content-two-top-text">
+                  Безвреден для людей и домашних животных.<br />
+                  Без запаха.
+                </p>
+                <p class="success_content-one-text-block">
+                  Наносится В СУХОМ ВИДЕ.<br />
+                  Не нужно покидать помещение и проводить обязательную уборку
+                  квартиры после обработки.
+                </p>
+                <div class="success_content-one-article-group">
+                  <div class="success_content-one-left">
+                    <h6 class="success_content-one-left-title">Применение:</h6>
+                    <p class="success_content-one-left-text">
+                      <span class="success_content-one-left-text-span-one">
+                        Надев респиратор и перчатки В СУХОМ ВИДЕ, НЕ РАЗБАВЛЯЯ
+                        ВОДОЙ обрабатывают места скопления и передвижения
+                        насекомых.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-one">
+                        1. Промыть всё помещение раствором пищевой соды.
+                        Разводят 300 г вещества в 1 л воды.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-one">
+                        2. Осмотреть всю посуду, запас продуктов, игрушки и т.п.
+                        для обнаружения взрослых особей либо личинок.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-one">
+                        3. Собрать текстиль: шторы, скатерти, постельные
+                        принадлежности. Выстирать их при максимально разрешенной
+                        температуре.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-one">
+                        4. Нужно поднять ковролин или ковры, убрать плинтуса,
+                        перебрать книги, убрать со стен панно, картины и т.п.
+                        Освободить участки, где могут прятаться паразиты.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-one">
+                        5. Обильно нанести препарат на участки потенциального
+                        присутствия насекомых: задние стенки мебели, щели,
+                        вентрешетки и т.п.
+                      </span>
+                    </p>
+                    <ul class="success_content-one-left-list">
+                      <li class="success_content-one-left-item">
+                        В СУХОМ ВИДЕ! НЕ РАЗБАВЛЯТЬ ВОДОЙ!
+                      </li>
+                      <li class="success_content-one-left-item">
+                        ОБЯЗАТЕЛЬНОЕ УСЛОВИЕ - ОБРАБАТЫВАТЬ ВСЮ КВАРТИРУ! КАЖДУЮ
+                        КОМНАТУ (да, даже если в спальных комнатах нет
+                        тараканов) они появятся там с обработанной ранее
+                        кухни!!!!
+                      </li>
+                      <li class="success_content-one-left-item">
+                        ПРОТИРАТЬ И МЫТЬ ПОЛЫ ПОСЛЕ ОБРАБОТКИ СТРОГО ЗАПРЕЩАЕТСЯ
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="success_content-one-right">
+                    <h6 class="success_content-one-left-title">
+                      Препарат убирают не ранее 3-х недель!
+                    </h6>
+                    <p class="success_content-one-left-text">
+                      <span class="success_content-one-left-text-span-one">
+                        Помните, невозможно уничтожить насекомых за пару часов.
+                        Даже при прямой обработке гнезд - клопы погибнут через
+                        3-4 часа, а те, на которых порошок непосредственно не
+                        попадет, будут погибать только ночью, когда выберутся из
+                        укрытий. Недавно напитавшиеся паразиты, которые 2-3
+                        суток проводят в укрытии, будут гибнуть только через
+                        несколько дней после применения препарата. </span
+                      ><br />
+                      <span class="success_content-one-left-text-span-two">
+                        Клоп может вылупиться из яйца и через 3 месяца после
+                        обработки. Если Вы предлагаете победить насекомых за час
+                        (день) мы вряд ли оправдаем Ваши ожидания.
+                      </span>
+                      <br />
+                      <span class="success_content-one-left-text-span-two">
+                        При используемом нашей компании способе обработки
+                        помещения клопы (другие насекомые) должны погибнуть в
+                        течение месяца ВСЕ – и половозрелые особи, и те, что
+                        вылупятся, например, через 28 дней после обработки.
+                      </span>
+                    </p>
+                    <img
+                      src="./img/Rectangle 5.png"
+                      class="success_content-two-right-image"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section-four">
+        <div class="container">
+            <div class="form__content">
+                <div class="form__content_left">
+                    <img class="content__left-pos" src="./img/Group 7.png"/>
+                    <h1 class="form__content_text">Закажите прямо сейчас</h1>
+                    <p class="form__content_para">Оставьте заявку для заказа и наш менеджер свяжется с вами в ближайшее время!</p>
+                    
+                    <form class="modal_main" id="mainForm">
+                        <div class="inps_one">
+                          <label for="">Ваше имя*</label>
+                          <input type="text" id="main_message"  class="one_inp" placeholder="Имя" />
+                        </div>
+          
+                        <div class="inps_one">
+                          <label for="">Ваш номер телефона*</label>
+                          <input
+                            type="number"
+                            class="one_inp"
+                            placeholder="+99890 000 00 00"
+                            id="main_number"
+                          />
+                        </div>
+          
+                        <div class="inps_one">
+                          <label for="">Ваш адрес</label>
+                          <input
+                            type="text" id="main_address"
+                            class="one_inp"
+                            placeholder="Вводите свой адрес"
+                          />
+                        </div>
+                        <div class="btns">
+                          <button type="submit" id="send" class="send">Отправить</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="form__content_right">
+                    <img src="img/main_img.png" alt="" class="content_right-img">
+                    <img class="content__right-pos" src="./img/Group 7.png"/>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="nav">
+            <div class="container">
+              <div class="nav__content">
+                <div class="nav_left">
+                  <a href="" class="nav_left-btn">
+                    <img src="./img/nav-logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="nav_right">
+                  <div class="nav_right-mini">
+                  </div>
+                  
+                   <div class="foricons">
+                    <button href="" class="footer_order">+998 94 6000169</button>
+                   <div class="foricons_two">
+                    <a href="" class="tgicon">
+                      <img src="./img/telegram.png" alt="" />
+                    </a>
+                    <a href="" class="tgicon">
+                      <img src="./img/insta'.png" alt="" />
+                    </a>
+                    <a href="" class="tgicon">
+                      <img src="./img/facebook.png" alt="" />
+                    </a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </footer> 
+
+    <script src="main.js"></script>
+  </body>
+</html>
